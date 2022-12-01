@@ -42,8 +42,6 @@ Now you can export the Lottiefiles and copy the whole JSON Code.
 Open the html file with your code editor and paste and replace the LottieFile JSON code to the varible "lottieTemplate" in Line 24
 
 ```javascript
-    <script>
-        //Paste Lottie File .JSON Code
         let lottieTemplate =  /*past your LottieFile code here */
 ```
 
