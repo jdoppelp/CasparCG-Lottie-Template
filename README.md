@@ -42,7 +42,7 @@ Now you can export the Lottiefiles and copy the whole JSON Code.
 Open the html file with your code editor and paste and replace the LottieFile JSON code to the varible "lottieTemplate" in Line 24
 
 ```javascript
-        let lottieTemplate =  /*past your LottieFile code here */
+let lottieTemplate =  /*past your LottieFile code here */
 ```
 
 This might be way bigger than my example, depending on your animation.
