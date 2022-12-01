@@ -7,13 +7,11 @@ I'm new in coding and this is my first public repository so let me know what you
 ## How to use
 To play this expamle template with CasparCG you only need to copy the "example_lower-third-template.html" and the "lottie.js" (lottie player from Bodymovin-Plugin) into your template Folder. It's important to send the Data as JSON. Add the keys: "_name" and "_subtitle" with your new values. Now you can use the "play" "stop" and "update" commands from CasparCG
 
+![image](https://user-images.githubusercontent.com/87117653/205102045-e0954b19-9e22-42ae-9f35-8b5b6624d511.png)
+
+
 ## How it works
 As you play the template, the js-skript in the template replaces the keys in the animation with your values and plays the lower-thrid. It simply changes the text within your LottieFile code and playes a part of the animation: 
-
-    Play - playes the part of the animation called "start"
-    Update - playes the part of the animation called "still"
-    Stop - playes the part of the animation called "stop"
-
 
 
 # Getting Started with your own template:
