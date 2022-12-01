@@ -54,3 +54,7 @@ Now you should be able to playout your own template with CasparCG by adding the 
 
 
 
+## About CasparCG
+I always tried this with CasparCG LTS 2-3-3 
+
+
