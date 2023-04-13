@@ -100,6 +100,6 @@ I always tried this with CasparCG LTS 2-3-3
 
 
 ## Credits
-Thanks to @HeineFro https://github.com/HeineFro for solving the Font problems.
-Thanks to @PeterNicos https://github.com/PeterNicos for creating the example templates and playing around with expressions in AE. 
+Thanks to  [HeineFro](https://github.com/HeineFro) for solving the Font problems.
+Thanks to [PeterNicos](https://github.com/PeterNicos) for creating the example templates and playing around with expressions in AE. 
 More templates can be found on his github page.
