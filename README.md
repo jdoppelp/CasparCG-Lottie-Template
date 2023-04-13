@@ -11,8 +11,7 @@ To play these expamle templates with CasparCG you need to:
 3.1 For "example_lower-third-template.html": Add the keys: "_firstLine" and "_secondLine" with your new values. You can now use the "play", "stop" commands from CasparCG.
 3.2 For "example_PieChart-template.html": Add the keys: "_headline", "_subheadline", "_value1", "_value2", "_value3" with your new values. Use "play" command for playing the beginning (or "load" to stop on first frame) and use "next" to trigger the next part of the Piechart animation.
 
-//Example Images
-
+![LottieTemplate_Example_Image](https://user-images.githubusercontent.com/87117653/231723213-12637e81-30ae-498e-8298-a8c1994b5034.png)
 
 ## How it works
 First of all: I used the same script for both templates. So its universal for different usecases. As you play the template, the js-skript in the template replaces the keys in the animation with your values and plays the lower-third. It simply changes the text within your LottieFile code and plays a part of the animation. 
@@ -43,7 +42,7 @@ Now you can use the Bodymovin plugin to export your animation as a lottie/JSON f
 1. Make sure you disable Glyphs in the settings
 2. Add the Font Path and the Font Family - The Fontpath is relative to your HTML-Template. So that the Template knows where to find the font to display your text properly. Therefore I created the "fonts" folder next to the template.
 
-!!! IMAGE Font export
+! Image comming Soon !
 
 
 
