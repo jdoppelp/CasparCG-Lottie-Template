@@ -57,8 +57,8 @@ Now you can use the Bodymovin plugin to export your animation as a lottie/JSON f
 1. Make sure you disable Glyphs in the settings
 2. Add the Font Path and the Font Family - The Fontpath is relative to your HTML-Template. So that the Template knows where to find the font to display your text properly. Therefore I created the "fonts" folder next to the template.
 
-! Image comming Soon !
 
+![LottieTemplate_Bodymovin_Font_Image](https://user-images.githubusercontent.com/87117653/231740645-99fe55e6-1f3c-4a7b-b9e2-a7d7051c7ddf.png)
 
 
 
