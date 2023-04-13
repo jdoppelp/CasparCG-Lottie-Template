@@ -19,8 +19,8 @@ First of all: I used the same script for both templates. So its universal for di
 # Getting Started with your own template:
 
 ## Creating the LottieFile 
-To use the templates with your own animation you need to create a LottieFile where the text isn't converted to shapes (in Bodymovin - Disable Glyphs in the Settings) and the textlayers in the animation should have unique names (e.g. _firstLine, _headLine, _value1, ...). 
-I recommend using this type of naming convention with the underscore "_" at the beginning.
+To use the templates with your own animation you need to create a LottieFile where the text isn't converted to shapes (in Bodymovin - Disable Glyphs in the Settings) and the textlayers in the animation should have unique names (e.g._ _firstLine_, _ _headLine_,_ _value1_ , ...). 
+I recommend using this type of naming convention with the underscore _"_"_ at the beginning.
 Remember that the script only updates text layers. If you want to change data for an animation you have to make sure that the data is stored in a text layer, not in a slider. If you don't wanna see the textlayer, just make it invisible.
 
 Add these markers to your animation timeline. They will splitt the animation into parts, so you can play the parts step by step in CasparCG. Every marker needs to have a duration. After playing the part, Caspar will stop on the last frame of the marker.
@@ -50,9 +50,9 @@ Now you can use the Bodymovin plugin to export your animation as a lottie/JSON f
 ## Add your animation to the template
 Open the "raw-template.html" file with your code editor and paste the LottieFile JSON code from your exported file to the variable "lottieTemplate" in Line 39
 
-javascript
+```javascript
 let lottieTemplate =  /*paste your LottieFile code here */
-
+```
 
 This might be way bigger than my example, depending on your animation.
 
@@ -60,6 +60,18 @@ This might be way bigger than my example, depending on your animation.
 
 ## Try your templates
 Now you should be able to playout your own template with CasparCG by adding the keys and values in the client and sending it to CasparCG.
+
+## Debugging
+As you play around with different templates in development, you may forget the excact keys you need for your data. Therefore I created a "secret" info key. 
+By sending the key _"_templateInfo"_ (the value doesn't matter) the CG Server shows a list of every layer starting with an underscore _"_"_ .
+Thats how you can check the right keys for your textlayers easily if you're using the naming convention with the underscore. 
+
+![LottieTemplate__templateInfo_Image](https://user-images.githubusercontent.com/87117653/231728746-824cc74a-0562-44ee-a51c-f8c09c1034df.png)
+
+Further you get a notification on your CasparCG Output if you forget to send data as JSON.
+
+![LottieTemplate_JSON_Image](https://user-images.githubusercontent.com/87117653/231729132-526047f9-7e4c-49dc-bbce-6a8c40a8b6be.png)
+
 
 
 
