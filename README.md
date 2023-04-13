@@ -8,8 +8,18 @@ This solution works for me and my use cases, let me know if you have any other i
 To play these expamle templates with CasparCG you need to:
 1. Copy all files of this repository into your CasparCG template Folder. 
 2. In the Caspar Client - set the checkbox "Send Data as JSON", small, but important!
-3.1 For "example_lower-third-template.html": Add the keys: "_firstLine" and "_secondLine" with your new values. You can now use the "play", "stop" commands from CasparCG.
-3.2 For "example_PieChart-template.html": Add the keys: "_headline", "_subheadline", "_value1", "_value2", "_value3" with your new values. Use "play" command for playing the beginning (or "load" to stop on first frame) and use "next" to trigger the next part of the Piechart animation.
+3.1 For "example_lower-third-template.html": 
+Add the keys: 
+```
+"_firstLine", "_secondLine"
+```
+with your new values. You can now use the "play", "stop" commands from CasparCG.
+3.2 For "example_PieChart-template.html": 
+Add the keys: 
+```
+"_headline", "_subheadline", "_value1", "_value2", "_value3" 
+```
+with your new values. Use "play" command for playing the beginning (or "load" to stop on first frame) and use "next" to trigger the next part of the Piechart animation.
 
 ![LottieTemplate_Example_Image](https://user-images.githubusercontent.com/87117653/231723213-12637e81-30ae-498e-8298-a8c1994b5034.png)
 
@@ -19,9 +29,14 @@ First of all: I used the same script for both templates. So its universal for di
 # Getting Started with your own template:
 
 ## Creating the LottieFile 
-To use the templates with your own animation you need to create a LottieFile where the text isn't converted to shapes (in Bodymovin - Disable Glyphs in the Settings) and the textlayers in the animation should have unique names (e.g._ _firstLine_, _ _headLine_,_ _value1_ , ...). 
-I recommend using this type of naming convention with the underscore _"_"_ at the beginning.
+To use the templates with your own animation you need to create a LottieFile where the text isn't converted to shapes (in Bodymovin - Disable Glyphs in the Settings) and the textlayers in the animation should have unique names - e.g.:
+```
+_firstLine, _headLine, _value1, ...
+```
+
+I recommend using this type of naming convention with the underscore " _ " at the beginning.
 Remember that the script only updates text layers. If you want to change data for an animation you have to make sure that the data is stored in a text layer, not in a slider. If you don't wanna see the textlayer, just make it invisible.
+
 
 Add these markers to your animation timeline. They will splitt the animation into parts, so you can play the parts step by step in CasparCG. Every marker needs to have a duration. After playing the part, Caspar will stop on the last frame of the marker.
 This is how you name them. The "start" marker is 100% necessary: 
@@ -63,10 +78,15 @@ Now you should be able to playout your own template with CasparCG by adding the 
 
 ## Debugging
 As you play around with different templates in development, you may forget the excact keys you need for your data. Therefore I created a "secret" info key. 
-By sending the key _"_templateInfo"_ (the value doesn't matter) the CG Server shows a list of every layer starting with an underscore _"_"_ .
+By sending the key 
+```
+"_templateInfo"
+```
+(the value doesn't matter) the CG Server shows a list of every layer starting with an underscore " _ " .
 Thats how you can check the right keys for your textlayers easily if you're using the naming convention with the underscore. 
 
-![LottieTemplate__templateInfo_Image](https://user-images.githubusercontent.com/87117653/231728746-824cc74a-0562-44ee-a51c-f8c09c1034df.png)
+![LottieTemplate__templateInfo_Image](https://user-images.githubusercontent.com/87117653/231729716-b7107805-1918-43bd-8059-419c981ad5e8.png)
+
 
 Further you get a notification on your CasparCG Output if you forget to send data as JSON.
 
@@ -80,6 +100,6 @@ I always tried this with CasparCG LTS 2-3-3
 
 
 ## Credits
-Thanks to @HeineFro https://github.com/HeineFro for solving the Font problems
+Thanks to @HeineFro https://github.com/HeineFro for solving the Font problems.
 Thanks to @PeterNicos https://github.com/PeterNicos for creating the example templates and playing around with expressions in AE. 
 More templates can be found on his github page.
