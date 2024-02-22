@@ -63,13 +63,9 @@ Now you can use the Bodymovin plugin to export your animation as a lottie/JSON f
 
 
 ## Add your animation to the template
-Open the "raw-template.html" file with your code editor and paste the LottieFile JSON code from your exported file to the variable "lottieTemplate" in Line 39
+Save the exported json file named data.json along the raw-template.html
 
-```javascript
-let lottieTemplate =  /*paste your LottieFile code here */
-```
 
-This might be way bigger than my example, depending on your animation.
 
 
 
